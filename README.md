@@ -7,3 +7,24 @@ Fichier: MovieServiceController.java
 
 LeLoupWallStreet.setActeurPrincipale(diCaprio);
 fastAndFurious9.setActeurPrincipale(vinDiesel);
+
+## Acces au microservice Eureka server
+
+http://localhost:8761
+
+
+## Acces au Eureka client
+
+http://localhost:3536
+
+## Endpoints
+
+http://localhost:3536/getActeurs
+http://localhost:3536//getActeur/{name}
+
+http://localhost:3536/getFilms
+http://localhost:3536/getFilm/{titre}
+
+
+
+
