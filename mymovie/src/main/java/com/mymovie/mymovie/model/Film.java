@@ -1,6 +1,5 @@
 package com.mymovie.mymovie.model;
 
-import java.util.Date;
 
 public class Film {
     private String titre;

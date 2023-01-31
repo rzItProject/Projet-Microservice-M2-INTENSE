@@ -1,24 +1,19 @@
 package com.mymovie.mymovie.model;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 public class Acteur {
     private String nom;
     private String prenom;
-    private String dateDeNaissance;
-    private List<Film> filmographie;
+    private String dateNaissance;
+    private Film filmographie;
 
     public Acteur() {
-
     }
 
-    public Acteur(String nom, String prenom, String dateDeNaissance) {
+    public Acteur(String nom, String prenom, String dateNaissance, Film filmographie) {
         this.nom = nom;
         this.prenom = prenom;
-        this.dateDeNaissance = dateDeNaissance;
-        this.filmographie = new ArrayList<Film>();
+        this.dateNaissance = dateNaissance;
+        this.filmographie = filmographie;
     }
 
     public String getNom() {
@@ -37,25 +32,25 @@ public class Acteur {
         this.prenom = prenom;
     }
 
-    public String getDateDeNaissance() {
-        return dateDeNaissance;
+    public String getDateNaissance() {
+        return dateNaissance;
     }
 
-    public void setDateDeNaissance(String dateDeNaissance) {
-        this.dateDeNaissance = dateDeNaissance;
+    public void setDateNaissance(String dateNaissance) {
+        this.dateNaissance = dateNaissance;
     }
 
-    public List<Film> getFilmographie() {
+    public Film getFilmographie() {
         return filmographie;
     }
 
-    public void setFilmographie(List<Film> filmographie) {
+    public void setFilmographie(Film filmographie) {
         this.filmographie = filmographie;
     }
 
     @Override
     public String toString() {
-        return "Acteur [nom=" + nom + ", prenom=" + prenom + ", dateDeNaissance=" + dateDeNaissance + ", filmographie="
+        return "Acteur [nom=" + nom + ", prenom=" + prenom + ", dateNaissance=" + dateNaissance + ", filmographie="
                 + filmographie + "]";
     }
 }
